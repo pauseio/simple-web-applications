@@ -1,0 +1,20 @@
+[project]
+name = "simple-web-app"
+version = "0.1.0"
+description = "A simple event-driven HTTP server with OpenTelemetry logging"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+# Configure hatchling to include the current directory as the package
+# This is needed because we have a simple script structure (app.py)
+# rather than a standard src/simple_web_app/ package directory
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+
+[tool.uv]
+dev-dependencies = []

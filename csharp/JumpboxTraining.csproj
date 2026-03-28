@@ -1,0 +1,35 @@
+<!-- This is the MSBuild project file for a .NET application -->
+<!-- It defines how the project should be built, its dependencies, and configuration -->
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- PropertyGroup contains build configuration settings -->
+  <PropertyGroup>
+    <!-- OutputType specifies what kind of output this project produces -->
+    <!-- 'Exe' means this is a console application (produces an executable) -->
+    <!-- Other values: 'Library' for DLLs, 'WinExe' for Windows GUI apps -->
+    <OutputType>Exe</OutputType>
+
+    <!-- TargetFramework specifies which .NET framework to target -->
+    <!-- 'net8.0' means .NET 8.0 (LTS release from November 2023) -->
+    <!-- Other common values: 'net6.0', 'net7.0', 'net9.0', 'net48' for .NET Framework 4.8 -->
+    <TargetFramework>net8.0</TargetFramework>
+
+    <!-- Nullable enables nullable reference types (a C# 8+ feature) -->
+    <!-- 'enable' means the compiler will warn about potential null reference issues -->
+    <!-- This helps prevent NullReferenceException at compile time -->
+    <Nullable>enable</Nullable>
+
+    <!-- ImplicitUsings automatically includes common namespaces -->
+    <!-- 'enable' means you don't need to add 'using System;' etc. at the top of files -->
+    <!-- Common namespaces like System, System.Linq, etc. are included automatically -->
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <!-- ItemGroup can contain project references or package references -->
+  <!-- This project has no external dependencies, so this section is empty -->
+  <!-- If we needed packages, they would look like: -->
+  <!-- <ItemGroup> -->
+  <!--   <PackageReference Include="PackageName" Version="1.0.0" /> -->
+  <!-- </ItemGroup> -->
+
+</Project>
